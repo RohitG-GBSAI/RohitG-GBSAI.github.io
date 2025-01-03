@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of RohitG showcasing skills, projects, and contact information.">
-    <title>RohitG - Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>RohitG</h1>
-            <p>Msc AI | Focus Areas: ML, Data Science, NLP | Previous Experience in Software Testing</p>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Web Developer | Designer | Innovator</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -22,30 +22,33 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <div class="container">
                 <h2>About Me</h2>
-                <p>Hello! I'm RohitG, student at GBS for the MSc Program. I am enthusiastic about Machine Learning, Data Science and NLP.</p>
+                <p>Hi, I'm [Your Name], a passionate web developer specializing in creating beautiful, responsive websites. I love coding, solving problems, and designing user-friendly experiences.</p>
             </div>
         </section>
-        <section id="projects">
+
+        <section id="projects" data-aos="fade-left">
             <div class="container">
                 <h2>Projects</h2>
                 <div class="project">
-                    <h3>Project Title 1</h3>
-                    <p>Description of the project. <a href="#">View Project</a></p>
+                    <h3>Project 1: Portfolio</h3>
+                    <p>A sleek and interactive portfolio showcasing my skills. <a href="#">View Project</a></p>
                 </div>
                 <div class="project">
-                    <h3>Project Title 2</h3>
-                    <p>Description of the project. <a href="#">View Project</a></p>
+                    <h3>Project 2: E-commerce Website</h3>
+                    <p>An online store built with a responsive design. <a href="#">View Project</a></p>
                 </div>
             </div>
         </section>
-        <section id="skills">
+
+        <section id="skills" data-aos="fade-right">
             <div class="container">
                 <h2>Skills</h2>
-                <ul>
+                <ul class="skills-list">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -53,18 +56,30 @@
                 </ul>
             </div>
         </section>
-        <section id="contact">
+
+        <section id="contact" data-aos="fade-up">
             <div class="container">
-                <h2>Contact</h2>
+                <h2>Contact Me</h2>
                 <p>If you'd like to work together or have any questions, feel free to reach out!</p>
-                <a href="mailto:your.email@example.com" class="button">Email Me</a>
+                <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 [Your Name]. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
